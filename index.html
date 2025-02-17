@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问卷随机跳转</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            // 定义所有的问卷链接
+            var questionnaireLinks = [
+                "https://wj.qq.com/s2/17892207/51b1/",
+                "https://wj.qq.com/s2/17853515/ak95/",
+            ];
+
+            // 随机选择一个链接
+            var selectedLink = questionnaireLinks[Math.floor(Math.random() * questionnaireLinks.length)];
+
+            // 重定向到随机选择的链接
+            window.location.href = selectedLink;
+        };
+    </script>
+</head>
+<body>
+    <p>正在跳转到随机问卷...</p>
+</body>
+</html>
