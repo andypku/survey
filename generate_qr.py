@@ -9,7 +9,7 @@ qr = qrcode.QRCode(
 )
 
 # Add the link
-qr.add_data("https://andypku.github.io/survey/")
+qr.add_data("https://{researcher's GitHub ID}.github.io/{project name}")
 qr.make(fit=True)
 
 # Generate the QR code
