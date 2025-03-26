@@ -6,16 +6,16 @@
     <title>问卷跳转</title>
     <script type="text/javascript">
         window.onload = function() {
-            // 定义所有的问卷链接
+            // Define all the survey links
             var questionnaireLinks = [
                 "https://wj.qq.com/s2/17892207/51b1/",
                 "https://wj.qq.com/s2/18901488/nifr/",
             ];
 
-            // 随机选择一个链接
+            // Select a link randomly
             var selectedLink = questionnaireLinks[Math.floor(Math.random() * questionnaireLinks.length)];
 
-            // 重定向到随机选择的链接
+            // Redirect to a randomly selected link
             window.location.href = selectedLink;
         };
     </script>
